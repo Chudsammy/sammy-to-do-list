@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif script;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; */
+  
+}
+
+h1 {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif script;
+    font-weight: bold;
+    background-color: #cc4b58;
+    color: white;
+    padding: 5%;
+}
+
+input[type="text"], input[type="datetime-local"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    /* padding: 1%; */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+.add-bar{
+    display: flex;
+    width: 100%;
+    margin: 1%;
+    justify-content: center;
+    /* height: 100%; */
+}
+.add-bar #taskInput{
+    width: 70%;
+    margin: 1%;
+    border-radius: 10px;
+
+    
+}
+.add-bar #taskDate{
+    width: 30%;
+    margin: 1%;
+    border-radius: 10px;
+
+    
+}
+.add-bar button{
+    width: 20%;
+    margin: 1%;
+    border-radius: 10px;
+
+}
+#searchInput{
+    width: 100%;
+    border-radius: 30px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+#taskList{
+    display: flex;
+    overflow-y: auto;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    flex-direction: column;
+    height: 100%;
+    max-height: 60vh;
+}
+#taskList span{
+    width: 40%;
+}
+#taskList span div{
+    overflow-y: auto;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    font-weight: 500;
+}
+.header{
+    position: sticky;
+}
